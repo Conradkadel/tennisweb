@@ -4,29 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+	<link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
     <title>Tennis With Me!</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$('#navMenu').slicknav({prependTo:"#mobilemenu"});
+		});
+	</script>
+
+
 </head>
 <body>
-    <header>
-        <h1>Tennis With Me!</h1>
-        <h2>Under Construction</h2>
-    </header>
+    <div class="hero-image">
+        <nav id="mobilemenu"></nav>
+        <div id="navMenu">
+            <ul>
+                <li><a href="rolandgarros.html">Roland Gaross</a></li>
+                <li><a href="australienopen.html">Australien Open</a></li>
+                <li><a href="wimbeldon.html">Wimbeldon</a></li>
+                <li><a href="usopen.html">UsOpen</a></li>
+            </ul>
+        </div>
+        <div class="hero-text">
+          <h1>Discover the World of Tennis Grand Slams</h1>
+        </div>
+      </div>
     <main> 
-        <p>On this Website I want to provide all the information you need to know about the game of Tennis.</p>
-        <p> Giving insights in rules, players and rankings. I want to include visual representations of the game and court. </p>
-        <p> Just explain everything that you need to know</p>
-        <p>The 4 Pages I want to use are: </p>
-        <ul>
-            <li>Home Page // General Information and Introductin // Diff Courts // Rackets ...</li>
-            <li>The 4 Grand Slams // Biggest Tennis Turnamenst the big 4 // Explain and show the different ones</li>
-            <li>The best players in the world  // Especially Nadal, Djokovic and Federer // Maybe include a ranking list</li>
-            <li>Rules and Equeiment  // Rules for play and equiment needed to play Tennis</li>
-        </ul>
-        <p>I want to design it very graphical with many pictures</p>
-        
+        <div class="introduction">
+            <p>
+            Welcome to the world of tennis grand slams! These four major tournaments - the Australian Open, French Open, Wimbledon, and US Open - are the pinnacle of the tennis calendar, attracting the world's best players and millions of fans from around the globe. From the scorching heat of Melbourne to the lush lawns of Wimbledon, each tournament has its own unique character and charm. Whether you're a die-hard fan or a casual observer, this website will guide you through the history, traditions, and excitement of tennis grand slams. Get ready to experience the thrill of the game like never before!
+        </p>
+        </div>
 
+
+        <div class="discover">
+            <p>Check These Out!</p>
+        </div>
+
+        <div id="main">
+            <div class="rg">
+                <img src="images/rg1.jpg" alt="">
+                <p>Get ready to dig deep and battle on the clay at the French Open! Held every spring in Paris, this tournament is the ultimate test of skill and endurance on the slow, red clay courts of Roland Garros. With a rich history and tradition dating back over a century, the French Open is one of the most prestigious and challenging events in tennis</p>
+                <button class="btrg">Roland Garros</button>
+            </div>
+            <div class="ao">
+                <img src="images/us3.jpg" alt="">
+                <p>Get ready to beat the heat and experience the excitement of the Australian Open! Held every January in Melbourne, this tournament is known for its high-energy atmosphere and fast-paced action. With a long list of legendary champions and iconic moments, the Australian Open is a must-see for any tennis fan</p>
+                <button class="btao">Australian Open</button>
+            </div>
+            <div class="uo">
+                <img src="images/court2.jpg" alt="">
+                <p>Get ready to feel the energy and excitement of the US Open! Held every August in New York City, this tournament is the biggest and brashest of the grand slams, with a raucous crowd and fast-paced action on the hard courts of Flushing Meadows. With its prime-time matches and celebrity sightings, the US Open is the ultimate spectacle in tennis.
+                </p>
+                <button class="btuo">US Open</button>
+            </div>
+            <div class="wd">
+                <img src="images/court1.jpg" alt="">
+                <p>Get ready to indulge in the ultimate tennis experience at Wimbledon! Held every summer in London, this tournament is steeped in tradition and prestige, with its iconic grass courts and strict dress code. With a list of champions that reads like a who's who of tennis history, Wimbledon is the epitome of grand slam glory.</p>
+                <button class="btwd">Wimbeldon</button>
+            </div>
+        </div>
      </main>
-    <footer></footer>    
+    <footer>
+            <p>&copy; Conrad Kadel 2023</p>  
+    </footer>    
 </body>
 </html>
