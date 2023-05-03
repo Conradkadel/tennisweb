@@ -1,4 +1,7 @@
+html{
+    width: 100%;
 
+}
 
 
 .hero-image{
@@ -24,14 +27,15 @@
 }
 
 .contenttext{
+    background-color: rgba(27, 58, 196, 0.268);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 3px solid rgba(26, 71, 149, 0.803);
     width: 50%;
     font-size: 250%;
     text-align: center;
     padding-bottom: 4vh;
-    color: rgba(62, 100, 165, 0.803);
-    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    color: rgb(26, 71, 149);
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
     border-radius: 25px;
     
     box-shadow: 4px 4px rgba(0, 0, 0, 0.507);
@@ -52,7 +56,7 @@
 }
 
 .container {
-    border: 3px solid black;
+    
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/ausbig.jpg');
     padding-top: 10vh;
     padding-bottom: 12vh;
@@ -62,6 +66,15 @@
     flex-direction: column;
     width: 100%;
     height: 1000px;
+}
+.container footer{
+    
+    margin-top: 20vh;
+    border-top: 2px solid black;
+    width: 100%;
+    padding-top: 2vh;
+    
+    text-align: center;
 }
 
 .imagecarousel{
@@ -125,4 +138,287 @@
     max-height: 600px;
     width: 800px;
     max-width: 800px;
+}
+
+
+
+.middleText
+{
+    background-image: linear-gradient(to right, rgb(26, 71, 149),rgb(102, 150, 163), rgb(74, 148, 169),rgb(26, 71, 149));
+    height: 200px;
+    border-bottom: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.middleText h1 {
+    color: rgb(26, 71, 149);
+    font-size: 250%;
+    
+  
+}
+
+
+
+.players{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1680px;
+}
+
+/*  BOX SEXTION  */
+
+
+.box1 , .box2, .box3{
+    width: 100%;
+    max-width: 1700px;
+    height: 1300px;
+}
+
+
+.box1{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, rgb(26, 71, 149),rgb(102, 150, 163));
+
+}
+.box2{
+    background-image: linear-gradient(to right ,rgb(102, 150, 163), rgb(74, 148, 169));
+}
+
+.box1 h2 , .box3 h2 , .box2 h2{
+    margin: 5vh 11vh;
+    padding: 0;
+    width: 300px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px blue;
+}
+.box3 h2{
+    text-shadow: 2px 2px 4px rgb(215, 0, 147);
+}
+
+.box3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+    background-image: linear-gradient(to right,  rgb(74, 148, 169),rgb(26, 71, 149));
+    
+}
+
+.box1 h3, .box3 h3 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 3vh;
+    margin-top: 3vh;
+    
+}
+
+
+/* BOX 1 - MAN */
+
+.djocovic img, .roy img, .federer img {
+    padding: 3vh 1vh;
+    height: 250px;
+    width: 220px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.djocovic p, .roy p, .federer p {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.djocovic , .roy , .federer{
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+}
+
+/* BOX 2- General Information */
+
+.box2 h2{
+    font-size: 200%;
+    width: 100%;
+    margin: 4vh 5vh;
+    
+}
+
+.box2 ul {
+    margin: 3vh;
+    height: 900px;
+    list-style-type: none;
+
+}
+.box2 ul li{
+    padding: 2vh 0;
+    margin-top: 11vh;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px blue;
+    text-align: center;
+    box-shadow: 3px 3px blue;
+    font-size: 120%;
+    border: 3px solid rgb(57, 57, 194);
+
+}
+
+
+/* BOX 3 - WOMAN */
+
+
+.steffi p, .serena p, .marg p{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.steffi img, .serena img, .marg img{
+    padding: 3vh 1vh;
+    height: 250px;
+    width: 220px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.steffi , .serena , .marg {
+    border-left:3px solid black ;
+    border-bottom: 3px solid black;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 30%;
+}
+
+#mobilemenu{
+    display:none;
+}
+
+@media only screen and (max-width:1300px){
+    .players{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1680px;
+    }
+    .box1 h2 , .box3 h2 , .box2 h2{
+        margin: 5vh 52vh;
+        width: 30%;
+       
+    }
+   
+}
+
+@media only screen and (max-width:1000px){
+    .contenttext{
+        font-size: 215%;
+    }
+   
+}
+@media only screen and (max-width:780px){
+    #navMenu{
+        display: none;
+    }
+    #mobilemenu{
+        display:block;
+    }
+    .hero-image{
+        display: block;
+    
+    }
+    .image, .imagecarousel{
+        width: 400px;
+        max-width: 450px;
+    
+    }
+    .image img {
+        max-height: 600px;
+        width: 392px;
+        max-width: 450px;
+    }
+    .contenttext{
+        font-size: 175%;
+    }
+
+    .box1 h2 , .box3 h2 , .box2 h2{
+        margin: 5vh 30vh;
+        width: 30%;
+       
+    }
+    .container footer{
+    
+        margin-top: 40vh;
+        border-top: 2px solid black;
+        width: 100%;
+        padding-top: 2vh;
+        
+       color: white;
+    }
+   
+}
+@media only screen and (max-width:390px){
+    .hero-text h1{
+        font-size: 300%;
+        margin-left: 4vh;
+    }
+    .hero-text {
+        height: 700px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+
+    .hero-image{
+        
+        height: 800px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        
+    
+    }
+    
+    .image, .imagecarousel{
+        width: 100%;
+      
+    }
+    .image img {
+        
+        width: 100%;
+        
+    }
+    .contenttext{
+        font-size: 140%;
+    }
+
+    .box1 h2 , .box3 h2 , .box2 h2{
+        margin: 5vh 10vh;
+        width: 60%;
+       
+    }
+    .box2 {
+        height: 1450px;
+    
+    }
+    .container footer{
+    
+        margin-top: 40vh;
+        border-top: 2px solid black;
+        width: 100%;
+        padding-top: 2vh;
+        
+       color: white;
+    }
+   
 }

@@ -5,8 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+	<link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/ausopen.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$('#navMenu').slicknav({prependTo:"#mobilemenu"});
+		});
+	</script>
+
     <title>Asutralien Open</title>
 </head>
 <body>
@@ -14,14 +26,14 @@
         <nav id="mobilemenu"></nav>
         <div id="navMenu">
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="rolandgarros.html">Roland Gaross</a></li>
-                <li><a href="australienopen.html">Australien Open</a></li>
                 <li><a href="wimbeldon.html">Wimbeldon</a></li>
                 <li><a href="usopen.html">UsOpen</a></li>
             </ul>
-            <div class="hero-text">
-                <h1>AUSTRALIEN OPEN</h1>
-            </div>
+        </div>
+        <div class="hero-text">
+            <h1>AUSTRALIEN OPEN</h1>
         </div>
     <main>
         <div class="content">
@@ -30,9 +42,67 @@
             </div>
         </div>
 
+        <div class="middleText">
+          <h1>  Some Information You Might Find Usefull! </h1>
+        </div>
+         
+        <div class="players">
+            <div class="box1">
+                <h2>Top 3 Players - MALE</h2>
+                <h3>Novak Djokovic - 9 titles</h3>
+                    <div class="djocovic">
+                        <img src="images/closedjoko.jpg" alt="Novak"> 
+                        <p>Djokovic is the all-time record holder for most Australian Open titles won, with a total of nine titles to his name. He won his first title in 2008 and has won the tournament in 2011-2013, 2015-2016, and 2019-2021. Djokovic's dominance at the Australian Open has been truly remarkable, and he is widely regarded as one of the greatest players to ever play on hard courts.</p>
+                    </div>
+                <h3>Roy Laver - 6 titles</h3>
+                <div class="roy">
+                    <img src="images/roy3.jpg" alt="Roy">
+                    <p>Emerson won six Australian Open titles in the 1960s, which was a record until Djokovic surpassed him in the 2010s. He won his first title in 1961 and went on to win five more titles in 1963-1967. Emerson's legacy at the Australian Open remains strong, and he is considered one of the all-time greats of Australian tennis</p>
+                </div>
+                <h3>Roger Federer - 6 titles</h3>
+                <div class="federer">
+                    <img src="images/federer2.webp" alt="Federer">
+                    <p>Federer has won six Australian Open titles in his career, tying him with Emerson and Djokovic for the most Australian Open titles won in the Open Era. He won his first title in 2004 and went on to win in 2006-2007, 2010, 2017, and 2018. Federer's grace and style on the court have made him one of the most popular players in tennis history.</p>
+                 </div>
+            </div>
 
 
 
+            <div class="box2">
+                <h2>General Infromation about the Turnament</h2>
+                <p>
+                    <ul>
+                        <li>The tournament was first held in 1905 and has been played on various surfaces, including grass and Rebound Ace, before switching to the current surface of hard court in 1988.</li>
+                        <li>The Australian Open is typically held in January, which makes it the first Grand Slam tournament of the year.</li>
+                        <li>The tournament has grown in popularity over the years and is now one of the largest annual sporting events in the world, with over 800,000 spectators attending in 2020.</li>
+                        <li>The Australian Open features both men's and women's singles and doubles competitions, as well as mixed doubles and wheelchair events.</li>
+                        <li>In addition to the on-court action, the tournament also features numerous off-court activities, including live music, food and wine events, and a fan festival called the AO Live Stage.</li>
+                    </ul>
+                </p>
+            </div>
+
+
+
+            <div class="box3">
+                <h2>Top 3 PLayers - FEMALE</h2>
+                    <h3> Margaret Court -  11 titles</h3>
+                    <div class="marg">
+                            <p>Court is the most successful player in the history of the Australian Open, with a remarkable 11 titles to her name. She won her first title in 1960 and went on to win in 1961-1966 and 1969-1971. Court's dominance at the Australian Open was truly unparalleled, and she is considered one of the greatest players in tennis history.</p>
+                            <img src="images/Margaret-Court.jpg" alt="Novak"> 
+                    </div>
+                    <h3> Serena Williams - 7 titles </h3>
+                    <div class="serena">   
+                        <p>Williams is one of the greatest female tennis players of all time, and she has won seven Australian Open titles in her career. She won her first title in 2003 and went on to win in 2005, 2007, 2009-2010, 2015, and 2017. Williams' power and athleticism on the court have made her one of the most feared opponents in tennis.</p>
+                        <img src="images/serena.jpeg" alt="Roy">
+                    </div>
+                    <h3>Steffi Graf -  4 titles</h3>
+                    <div class="steffi">
+                            <p>Graf won four Australian Open titles in her career, cementing her legacy as one of the greatest players in tennis history. She won her first title in 1988 and went on to win in 1989-1990 and 1994. Graf's all-around game and mental toughness made her one of the most formidable players on the court.
+                            </p>
+                            <img src="images/steffi.jpeg" alt="Federer">
+                    </div>
+            </div>
+        </div>
         <div class="container">
             <div class="ausphotos">
                 Check out these Photos of the Australien Open
@@ -52,14 +122,15 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
-        </div>
-        </div>
-    </main>
-           
-      
+            </div>
         
-
+            <footer>&copy; Conrad Kadel 2023</footer>
+        </div>
+    
+    </main>
+      
     <script src="js/script.js"> </script>
-
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>
