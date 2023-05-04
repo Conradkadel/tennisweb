@@ -4,11 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roland Gaross</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+	<link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/ausopen.css">
+    <link rel="stylesheet" href="styles/rolandgarros.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function(){
+		$('#navMenu').slicknav({prependTo:"#mobilemenu"});
+		});
+	</script>
+    <title>Roland Garros</title>
 </head>
 <body>
     <header>
-        <h1>Under Constrction</h1>
+    <div class="hero-image">
+        <nav id="mobilemenu"></nav>
+        <div id="navMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="australienopen.html">Australia Open</a></li>
+                <li><a href="wimbeldon.html">Wimbeldon</a></li>
+                <li><a href="usopen.html">UsOpen</a></li>
+            </ul>
+        </div>
+        <div class="containera">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h1 class="animate-charcter"> Roland Garros</h1>
+               </div>
+            </div>
+        </div>  
+    </div>
     </header>
+    <main>
+        <div class="content">
+            <div class="contenttext"> 
+                The French Open, also known as Roland Garros, is a prestigious tennis tournament held annually in Paris, France. It is the premier clay court championship event and is known for its unique red clay courts. The tournament has a rich history of producing some of the greatest champions in tennis history, including Rafael Nadal and Chris Evert. The event includes singles, doubles, mixed doubles, junior, and wheelchair events, and is the second Grand Slam tournament of the year, typically held in late May and early June.
+            </div>
+        </div>
+
+        <div class="rgsection2">
+            <div class="rgbox1">
+                <div class="rgbox1box1">
+                    <h2>Clay Courts</h2>
+                    <img src="images/claycourts1.jpg" alt="Nadal">
+                    <p> 
+                        The French Open is the largest clay court tournament in the world, featuring 20 courts in total, including the iconic Court Philippe Chatrier, which has a seating capacity of over 15,000 spectators
+                    </p>
+                    <h2>History of the Name</h2>
+                    <img src="images/logorg.jpeg" alt="Borg">
+                    <p>The tournament is named after the French aviator Roland Garros, who was the first person to fly across the Mediterranean Sea. Garros was also a tennis player, and he competed in the French Open before his untimely death during World War I.</p>
+                    <h2>Famous Thropy </h2>
+                    <img src="images/trophyrg.webp" alt="Chris Evert">
+                    <p>The French Open is famous for its unique trophy, the Coupe des Mousquetaires, which translates to "The Musketeers' Trophy." The trophy is made of pure silver and features the engraved names of all the past winners, including Rafael Nadal, who has won the trophy a record 13 times.
+                    </p>
+                </div>
+            </div>
+            <div class="rgbox1">
+                <div class="rgbox1box1">
+                    <h2>Rafael Nadal</h2>
+                    <img src="images/nadal.jpeg" alt="Nadal">
+                    <p> With 13 French Open titles to his name, Rafael Nadal is considered the greatest clay court player of all time. He has dominated the tournament since his first win in 2005, winning it every year except for 2016 and 2020.</p>
+                    <h2>Bjorn Borg</h2>
+                    <img src="images/borg.jpeg" alt="Borg">
+                    <p>Bjorn Borg won six French Open titles in the late 1970s and early 1980s. He is considered one of the greatest players in the history of the tournament, and his rivalry with fellow legend John McEnroe is one of the most memorable in tennis history.</p>
+                    <h2>Chris Evert </h2>
+                    <img src="images/chris.webp" alt="Chris Evert">
+                    <p>Chris Evert won seven French Open titles in the 1970s and 1980s, establishing herself as one of the greatest women's players of all time. Her consistent baseline play and mental toughness were perfectly suited to the clay courts of Roland Garros.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="rgtitle">
+            Check out these Photos of the Australien Open
+        </div>
+        <div class="container">
+            <div class="imagecarousel">
+                <div class="image fadeout"><img src="images/garros2.jpg" alt=""></div>
+                <div class="image fadeout "><img src="images/garros3.webp" alt=""></div>
+                <div class="image fadeout"><img src="images/garros4.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/garroshit3.png" alt=""></div>
+                <div class="image fadeout"><img src="images/sand.jpeg" alt=""></div>
+                <div class="prev" onclick="showImage(1)"><i class="fa-solid fa-angle-right"></i></div>
+                <div class="next" onclick="showImage(-1)"><i class="fa-solid fa-angle-left"></i></div>
+            </div>
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>        
+    </main>
+    <footer>
+        <p>&copy; Conrad Kadel 2023</p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

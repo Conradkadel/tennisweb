@@ -1,0 +1,251 @@
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.hero-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/garroshero.jpg');
+    height: 1000px;
+    background-position: center; 
+}
+
+.animate-charcter{
+    text-align: center;
+    font-size: 400%;
+    padding-left: 30vh;
+ }
+
+.animate-charcter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30vh;
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #a44627 0%,
+    #db8207 20%,
+    #a44627 100%
+  );
+  height: 100%;
+    background-position: center; 
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+    font-size: 700%;
+}
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+#navMenu ul li a {
+    background-color: #472e20ae;
+    color: #a44627;
+}
+#navMenu ul li a:hover {
+    background-color: #a44627ae;
+    color: #472e20ae;
+    
+}
+
+.content   {
+    border-top: 5px solid black ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/garroshit2.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1200px;
+    max-height: 1200px;
+    width: 100%;
+}
+
+.contenttext{
+    background-color: rgba(196, 75, 27, 0.268);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 3px solid rgba(238, 111, 21, 0.803);
+    width: 40%;
+    font-size: 300%;
+    text-align: center;
+    padding-bottom: 4vh;
+    color: rgb(212, 78, 55);
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    border-radius: 25px;
+    
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.507);
+}
+
+.rgsection2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/closeclay.jpg');
+
+}
+.rgbox1{
+    border: 2px solid black;
+    width: 50%;
+    padding: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.rgbox1box1
+{
+    background-color: rgba(240, 108, 37, 0.382);
+    border-radius: 10px;
+    box-shadow: 5px 5px black;
+    border: 2px solid black;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1000px;
+}
+.rgbox1 img {
+    max-width: 100%;
+    max-height: 250px;
+    height: 100%;
+    width: 40%;
+    margin: 2vh;
+    
+ }
+
+ .rgbox1 p {
+   padding-bottom: 2vh;
+   border-bottom: 2px solid black;
+   width: 100%;
+   text-align: center;
+ }
+ .rgbox1 p:last-of-type {
+   border-bottom: none;
+  }
+ .rgbox1 h2 {
+   margin-top: 2vh;
+ }
+
+ .container {
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/garros5.webp');
+    padding-top: 25vh;
+    padding-bottom: 0;
+    
+}
+.imagecarousel{
+    position: relative;
+    margin: 2vh;
+    max-width: 908px;
+    width: 100%;
+}
+
+.rgtitle{
+    background-image: linear-gradient(rgba(234, 84, 29, 0.956),rgba(167, 75, 35, 0.834));
+    font-size: 200%;
+    padding: 5vh;
+    text-align: center;
+}
+.image img{
+    max-width: 908px;
+    width: 900px;
+}
+
+
+
+ @media only screen and (max-width:950px){
+    .image img{
+        max-width: 708px;
+        width: 700px;
+    }
+    .imagecarousel{
+    max-width: 708px;
+    }
+    .animate-charcter{
+       padding-left: 1vh;
+    }
+    .contenttext{
+        font-size: 250%;
+     }
+
+}
+
+@media only screen and (max-width:780px){
+    .rgsection2{
+        flex-direction: column;
+        width: 100%;
+    }
+    .contenttext{
+        font-size: 200%;
+     }
+    .rgbox1{
+        
+        width: 100%;
+    }
+    .image, .imagecarousel{
+        width: 450px;
+        max-width: 500px;
+    
+    }
+    .image img {
+        max-height: 600px;
+        width: 442px;
+        max-width: 500px;
+    }
+    .contenttext{
+        
+        width: 60%;
+        
+    }
+}
+@media only screen and (max-width:550px){
+    
+    .contenttext{
+        font-size: 150%;
+     }
+     .animate-charcter{
+        font-size: 450%;
+        
+    }
+    .contenttext{
+        
+        width: 70%;
+        
+    }
+    .image, .imagecarousel{
+        width: 400px;
+        max-width: 540px;
+    
+    }
+    .image img {
+        max-height: 600px;
+        width: 392px;
+        max-width: 450px;
+    }
+}
+@media only screen and (max-width:450px){
+    
+    
+    .image, .imagecarousel{
+        width: 350px;
+        max-width: 400px;
+    
+    }
+    .image img {
+        max-height: 500px;
+        width: 342px;
+        max-width: 400px;
+    }
+}

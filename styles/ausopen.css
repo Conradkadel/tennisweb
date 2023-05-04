@@ -8,13 +8,47 @@ html{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/australian-open.jpg');
     height: 1000px;
     background-position: center; 
+    
 
 }
-.hero-text{
-    height: 1000px;
+.animate-charcter{
+    text-align: center;
+    font-size: 400%;
+    padding-left: 30vh;
+ }
+
+.animate-charcter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #4227a4 0%,
+    #156cf8 20%,
+    #4227a4 100%
+  );
+  height: 1000px;
     background-position: center; 
-
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+    font-size: 700%;
 }
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
 
 .content   {
     border-top: 5px solid black ;
@@ -34,7 +68,7 @@ html{
     font-size: 250%;
     text-align: center;
     padding-bottom: 4vh;
-    color: rgb(26, 71, 149);
+    color: rgb(84, 122, 189);
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
     border-radius: 25px;
     
@@ -146,6 +180,7 @@ html{
 {
     background-image: linear-gradient(to right, rgb(26, 71, 149),rgb(102, 150, 163), rgb(74, 148, 169),rgb(26, 71, 149));
     height: 200px;
+    
     border-bottom: 3px solid black;
     display: flex;
     align-items: center;
@@ -155,6 +190,7 @@ html{
 }
 
 .middleText h1 {
+   
     color: rgb(26, 71, 149);
     font-size: 250%;
     
@@ -167,7 +203,7 @@ html{
     display: flex;
     flex-direction: row;
     width: 100%;
-    max-width: 1680px;
+    
 }
 
 /*  BOX SEXTION  */
@@ -193,11 +229,19 @@ html{
 .box1 h2 , .box3 h2 , .box2 h2{
     margin: 5vh 11vh;
     padding: 0;
-    width: 300px;
+    width: 250px;
+    max-width:  500px;
     text-align: center;
     border: 2px solid black;
     border-radius: 10px;
     text-shadow: 2px 2px 4px blue;
+}
+.box2 h2{
+    margin: 2vh 20vh;
+    padding: 0;
+    width: 250px;
+    max-width:  400px;
+    
 }
 .box3 h2{
     text-shadow: 2px 2px 4px rgb(215, 0, 147);
@@ -307,6 +351,7 @@ html{
 }
 
 @media only screen and (max-width:1300px){
+    
     .players{
         display: flex;
         flex-direction: column;
@@ -325,11 +370,31 @@ html{
     .contenttext{
         font-size: 215%;
     }
+    .animate-charcter{
+        padding-left: 1vh;
+     }
+    .box1{
+        
+        background-image: linear-gradient(180deg, rgb(26, 71, 149),rgb(102, 150, 163));
+    
+    }
+    .box2{
+        background-image: linear-gradient(180deg ,rgb(102, 150, 163), rgb(74, 148, 169));
+    }
+    .box3{
+     
+        background-image: linear-gradient(180deg,  rgb(74, 148, 169),rgb(26, 71, 149));
+        
+    }
    
 }
 @media only screen and (max-width:780px){
     #navMenu{
         display: none;
+    }
+    .animate-charcter{
+        font-size: 450%;
+        
     }
     #mobilemenu{
         display:block;
@@ -337,6 +402,11 @@ html{
     .hero-image{
         display: block;
     
+    }
+    .box1 h2 , .box3 h2 , .box2 h2{
+        margin: 5vh 22vh;
+        width: 50%;
+       
     }
     .image, .imagecarousel{
         width: 400px;
@@ -352,9 +422,10 @@ html{
         font-size: 175%;
     }
 
+
     .box1 h2 , .box3 h2 , .box2 h2{
-        margin: 5vh 30vh;
-        width: 30%;
+        margin: 5vh 10vh;
+        width: 60%;
        
     }
     .container footer{
@@ -368,15 +439,32 @@ html{
     }
    
 }
+@media only screen and (max-width:480px){
+    .animate-charcter{
+        font-size: 400%;
+        
+    }
+    .contenttext{
+        font-size: 145%;
+    }
+}
 @media only screen and (max-width:390px){
     .hero-text h1{
         font-size: 300%;
         margin-left: 4vh;
     }
+    .animate-charcter{
+        font-size: 325%;
+        
+    }
     .hero-text {
         height: 700px;
         margin-bottom: 0;
         padding-bottom: 0;
+    }
+    .box1{
+        height: 1450px;
+        
     }
     
 
@@ -400,6 +488,7 @@ html{
     }
     .contenttext{
         font-size: 140%;
+        width: 80%;
     }
 
     .box1 h2 , .box3 h2 , .box2 h2{
