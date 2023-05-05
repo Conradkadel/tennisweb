@@ -47,8 +47,7 @@ html{
     #4227a4 100%
   );
   
-  margin: 27vh 0 0 30vh;
-  padding: 0;
+ 
     background-position: center; 
   background-size: auto auto;
   background-clip: border-box;
@@ -491,8 +490,18 @@ html{
         font-size: 400%;
         
     }
+    .hero-image{
+        height: 700px;
+    
+    }
     .contenttext{
         font-size: 145%;
+    }
+    .animate-charcter{
+        font-size: 325%;
+        padding: 2vh;
+        margin-left: 5vh;
+        
     }
 }
 @media only screen and (max-width:390px){
@@ -502,6 +511,9 @@ html{
     }
     .animate-charcter{
         font-size: 325%;
+        padding: 2vh;
+        margin-left: 5vh;
+        margin-top: 20vh;
         
     }
     .hero-text {
@@ -517,7 +529,7 @@ html{
 
     .hero-image{
         
-        height: 800px;
+        height: 700px;
         margin-bottom: 0;
         padding-bottom: 0;
         

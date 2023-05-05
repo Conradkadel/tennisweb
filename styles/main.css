@@ -29,7 +29,7 @@
     margin: 0;
     padding: 0;
     margin-top: 35vh;
-    margin-left: 15vh;
+    margin-left: 20vh;
     
    
 
@@ -301,9 +301,17 @@ footer p{
     #mobilemenu{
         display:block;
     }
+   
     .hero-text h1{
         text-shadow: 3px 3px 10px black;
         font-size: 500%;
+        
+    }
+    .animate-charcter{
+  
+        margin-left: 1vh;
+        margin-top: 15vh;
+        
         
     }
     .introduction p{
@@ -343,7 +351,7 @@ footer p{
         
     }
     .uo, .wd, .ao, .rg {
-        height: 105vh;
+        height: 80vh;
     
     }
     .introduction p{
@@ -360,7 +368,7 @@ footer p{
         margin-bottom: 3vh;
     }
     .hero-image{
-        height: 800px;
+        height: 600px;
 
     }
     .btrg , .btwd, .btuo , .btao {
@@ -374,6 +382,13 @@ footer p{
         padding: 5px;
         border-radius: 8px;
         font-size: 130%;
+    }
+    .animate-charcter{
+        padding: 0;
+        margin-left: 1vh;
+        margin-top: 10vh;
+        font-size: 500%;
+        
     }
 
 }

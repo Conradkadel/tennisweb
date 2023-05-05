@@ -318,7 +318,7 @@ article {
 @media only screen and (max-width:630px){
    
     .animate-charcter{
-        margin: 40vh 0 0 15vh;
+        margin: 40vh 0 0 20vh;
         font-size: 500%;
         
      }
@@ -386,6 +386,16 @@ article {
     {
         height: 600px;
     }
+    .animate-charcter{
+        margin: 30vh 0 0 0vh;
+        font-size: 400%;
+        width: 100%;
+     }
+     .animate-charcter h1{
+        
+        font-size: 400%;
+        
+     }
     
 }
 

@@ -28,8 +28,8 @@ html{
   );
   height: 100%;
   margin: 0;
-    padding: 30vh;
-    padding-left: 35vh;
+    padding-top: 30vh;
+    padding-left: 30vh;
     background-position: center; 
   background-size: auto auto;
   background-clip: border-box;
@@ -74,7 +74,7 @@ html{
 .contenttext{
     background-color: rgba(0, 0, 0, 0.275);
     border: 3px solid rgba(238, 111, 21, 0.803);
-    width: 40%;
+    width: 60%;
     font-size: 350%;
     font-family: 'Fugaz One', cursive;
     font-family: 'Oswald', sans-serif;
@@ -270,6 +270,12 @@ html{
      }
      .animate-charcter{
         font-size: 450%;
+        padding-top: 20vh;
+        padding-left: 0vh;
+        
+    }
+    .hero-image{
+       height: 700px;
         
     }
     .contenttext{
