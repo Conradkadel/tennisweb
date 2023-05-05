@@ -507,12 +507,12 @@ html{
 @media only screen and (max-width:390px){
     .hero-text h1{
         font-size: 300%;
-        margin-left: 4vh;
+        margin-left: 1vh;
     }
     .animate-charcter{
-        font-size: 325%;
+        font-size: 270%;
         padding: 2vh;
-        margin-left: 5vh;
+        margin-left: 1vh;
         margin-top: 20vh;
         
     }
