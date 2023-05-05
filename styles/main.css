@@ -11,23 +11,63 @@
 
 .hero-image{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/heropic.jpg');
-    height: 1200px;
+    height: 1100px;
+    max-height: 1100px;
     background-position: center; 
 
 }
-.hero-text h1{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: 5px 5px 15px black;
+.animate-charcter{
     text-align: center;
-    display: flex;
-    justify-content: center;
-    padding-top: 25vh;
-    padding-right: 7vh;
-    color: rgb(26, 71, 149);
-    text-decoration: solid;
-    font-size: 600%;
+    font-size: 400%;
+    font-family: 'Fugaz One', cursive;
+    font-family: 'Oswald', sans-serif;
+ }
+
+.animate-charcter{
+    font-family: 'Fugaz One', cursive;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 35vh;
+    margin-left: 15vh;
     
+   
+
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    rgba(159, 155, 28, 0.835) 10%,
+    rgba(137, 133, 25, 0.835) 20%,
+    rgba(126, 124, 21, 0.835) 30%,
+    rgba(134, 125, 24, 0.835) 40%,
+    rgba(141, 128, 30, 0.772) 50%,
+    rgba(133, 159, 28, 0.835) 60%,
+    rgba(190, 193, 20, 0.835) 70%,
+    rgba(174, 159, 23, 0.835) 80%,
+    rgba(181, 186, 54, 0.835) 90%,
+    rgba(134, 128, 24, 0.835) 100%
+  );
+  height: 500px;
+    background-position: center; 
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+    font-size: 800%;
 }
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+
 
 
 #navMenu ul{
@@ -49,7 +89,8 @@
    
 }
 #navMenu ul li a {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Fugaz One', cursive;
+    font-family: 'Oswald', sans-serif;
     font-size: 130%;
     display: block;
     width: 100%;
@@ -57,7 +98,7 @@
     padding: 1em 0;
     text-decoration: none;
     background-color: #000000cf;
-    color: rgba(38, 20, 178, 0.783);
+    color: rgba(196, 171, 12, 0.783);
     
     font-weight: bold;
     
@@ -68,7 +109,7 @@
     text-align: center;
     padding: 1em 0;
     text-decoration: none;
-    background-color: #00801368;
+    background-color: rgba(196, 171, 12, 0.783);
     color: white;
     font-weight: bold;
     
@@ -86,14 +127,16 @@
     text-shadow: 2px 2px 2px black;
     display: flex;
     margin: 15% 20%;
-    color: rgb(0, 64, 10);
+    color: rgba(196, 171, 12, 0.783);
     border: 3px solid black;
     padding: 30px;
     border-radius: 10px;
-    font-size: 200%;
+    font-size: 250%;
     text-align: center;
     font-weight: bold;
-    
+    font-family: 'Fugaz One', cursive;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgba(0, 0, 0, 0.275);
 
     
 }
@@ -109,17 +152,19 @@
 }
 
 .discover p{
-    border: 2px solid rgba(38, 20, 178, 0.783);
-    width: fit-content;
-    height: fit-content;
+    
+    width: 100%;
+    height: 20%;
     display: flex;
     align-items: center;
    justify-content: center;
     border-radius: 4px;
-    font-size: 400%;
-    color:rgba(38, 20, 178, 0.91);
+    font-size: 600%;
+    color: rgba(196, 171, 12, 0.783);;
     text-indent: 5px;
     font-weight: bold;
+    font-family: 'Fugaz One', cursive;
+    font-family: 'Oswald', sans-serif;
     text-shadow: 3px 3px 4px black;
 }
 
@@ -162,6 +207,8 @@
 .uo p , .wd p, .ao p, .rg p{
     margin: 2vh;
     font-size: 150%;
+    font-family: 'Fugaz One', cursive;
+    font-family: 'Oswald', sans-serif;
     text-align: center;
     height: 30vh;
     
@@ -200,25 +247,49 @@ footer p{
    display: flex;
    align-items: center;
    justify-content: center;
+   font-family: 'Fugaz One', cursive;
+   font-family: 'Oswald', sans-serif;
 }
 
 #mobilemenu{
     display:none;
 }
 
-@media only screen and (max-width:1200px)
+@media only screen and (max-width:1600px)
  {
     .uo p , .wd p, .ao p, .rg p {
         margin: 2vh;
-        font-size: 130%;
+        font-size: 140%;
         text-align: center;
-        height: 35vh;
+        height: 30vh;
     }
     .btrg , .btwd, .btuo , .btao {
         padding: 1em ;
         font-size: 17px;
         margin-top: 4vh;
 
+    }
+    
+}
+@media only screen and (max-width:1200px)
+ {
+    .uo p , .wd p, .ao p, .rg p {
+        margin: 2vh;
+        padding-bottom: 2vh;
+        font-size: 120%;
+        text-align: center;
+        height: 45vh;
+    }
+    .btrg , .btwd, .btuo , .btao {
+        padding: 1em ;
+        font-size: 17px;
+        padding-top: 2vh;
+        margin-top: 0;
+       
+    }
+    .uo, .wd, .ao, .rg {
+        height: 85vh;
+    
     }
     
 }
@@ -252,15 +323,15 @@ footer p{
     }
     .uo p , .wd p, .ao p, .rg p {
         margin: 2vh;
-        font-size: 170%;
+        font-size: 180%;
         text-align: center;
         height: 35vh;
     }
     .btrg , .btwd, .btuo , .btao {
         padding: 2em ;
         font-size: 17px;
-        margin-top: 4vh;
-        margin-bottom: 5vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
 
     }
 
@@ -271,6 +342,10 @@ footer p{
         font-size: 400%;
         
     }
+    .uo, .wd, .ao, .rg {
+        height: 105vh;
+    
+    }
     .introduction p{
         padding: 5px;
         border-radius: 8px;
@@ -278,9 +353,15 @@ footer p{
     }
     .uo p , .wd p, .ao p, .rg p {
         margin: 1vh;
-        font-size: 150%;
+        font-size: 120%;
         text-align: center;
-        height: 35vh;
+        height: 40vh;
+        padding-bottom: 3vh;
+        margin-bottom: 3vh;
+    }
+    .hero-image{
+        height: 800px;
+
     }
     .btrg , .btwd, .btuo , .btao {
         padding: 1em ;
@@ -288,6 +369,11 @@ footer p{
         margin-top: 4vh;
         margin-bottom: 5vh;
 
+    }
+    .introduction p{
+        padding: 5px;
+        border-radius: 8px;
+        font-size: 130%;
     }
 
 }

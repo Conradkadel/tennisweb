@@ -1,0 +1,394 @@
+
+.hero-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/wimbeldonhero.jpg');
+    height: 1000px;
+    max-height: 1050px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+#navMenu ul li a {
+   
+    background-color: #2f4f19cf;
+    color: rgba(36, 159, 28, 0.835);
+    font-family: 'Fugaz One', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    
+}
+
+#navMenu ul li a:hover {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: rgba(36, 159, 28, 0.835);
+    color: rgba(1, 59, 2, 0.772);
+    font-weight: bold;
+    
+}
+.animate-charcter{
+    text-align: center;
+    font-size: 400%;
+    font-family: 'Fugaz One', cursive;
+    font-family: 'Oswald', sans-serif;
+ }
+
+.animate-charcter{
+    font-family: 'Fugaz One', cursive;
+    font-family: 'Oswald', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    margin-top: 35vh;
+    margin-left: 50vh;
+
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    rgba(36, 159, 28, 0.835) 10%,
+    rgba(33, 137, 25, 0.835) 20%,
+    rgba(28, 126, 21, 0.835) 30%,
+    rgba(32, 134, 24, 0.835) 40%,
+    rgba(14, 67, 15, 0.772) 50%,
+    rgba(36, 159, 28, 0.835) 60%,
+    rgba(33, 137, 25, 0.835) 70%,
+    rgba(28, 126, 21, 0.835) 80%,
+    rgba(32, 134, 24, 0.835) 90%,
+    rgba(32, 134, 24, 0.835) 100%
+  );
+  height: 400px;
+  background-position: center; 
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  
+    font-size: 700%;
+}
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+.containera
+{
+    align-items: center;
+  }
+
+.introduction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 110%;
+    font-family: 'Fugaz One', cursive;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgba(0, 0, 0, 0.346);
+    background-image: url("../images/wimbeldon3.jpg");
+    
+}
+.introduction p{
+    background-color: rgba(0, 0, 0, 0.359);
+    width: 80%;
+    color: rgba(36, 159, 28, 0.835);
+    
+}
+.videowrapper iframe {
+    width: 400px;
+    height: 200px;
+}
+article {
+    padding: 4vh 2vh;
+    margin-bottom: 2vh;
+
+}
+.wdbox1 , .wdbox2 , .wdbox3{
+    margin: 2vh;
+    width: 80%;
+    height: 40vh;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+    background-color: rgba(0, 0, 0, 0.401);
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    justify-content: space-around;
+}
+
+.wdboxes
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-image: url("../images/wdgras2.png");
+    
+}
+
+
+.wdplayer1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+.wdplayer1 h2{
+   padding: 1vh;
+   color: white;
+   font-family: 'Fugaz One', cursive;
+    font-family: 'Oswald', sans-serif;
+
+
+}
+.wdplayer1 img{
+    width: 150px;
+    height: 150px;
+    max-height: 150px;
+    max-width: 150px;
+   
+}
+.wdplayer1 p{
+    font-family: 'Fugaz One', cursive;
+    font-family: 'Oswald', sans-serif;
+    width: 90%;
+    color: white;
+   
+}
+.imagecarousel{
+    position: relative;
+    margin: 2vh;
+    max-width: 808px;
+    width: 100%;
+    
+}
+.image {
+    display: none;
+    width: 100%;
+    border: 4px solid rgb(248, 248, 248);
+
+}
+
+.image:first-of-type{
+    display: block;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    padding: 2vh;
+    background-color: rgba(57, 195, 64, 0.97);
+    transform: translateY(-50%);
+    transition: all 300ms ease;
+    color: rgba(245, 245, 245, 0.365);
+    font-size: 150%;
+
+}
+.prev{
+    right: 0;
+    border-radius: 5px 0 0 5px ;
+}
+.next {
+    left: 0;
+    border-radius: 0 5px 5px 0;
+    
+}
+.prev:hover , .next:hover {
+    background-color: rgba(45, 172, 43, 0.95);
+    color: rgba(103, 124, 143, 1);
+    cursor: pointer;
+}
+.dots {
+    display: flex;
+    gap: .5vh;
+}
+.dot { 
+    border: 2px solid black;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(38, 255, 0);
+    border-radius: 50%;
+}
+.active { 
+    border: 2px solid rgb(13, 255, 0);
+    background-color: rgba(0, 0, 0, 1);
+}
+.image img {
+    max-height: 600px;
+    width: 800px;
+    max-width: 800px;
+}
+.container {
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(8, 6, 6, 0.5)), url('../images/wimbeldon3.jpg');
+    padding-top: 10vh;
+    padding-bottom: 12vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 1000px;
+    
+}
+.middleinfo
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    color: white;
+    font-size: 300%;
+    font-family: 'Fugaz One', cursive;
+    font-family: 'Oswald', sans-serif;
+    background-image: linear-gradient(180deg,rgba(85, 160, 26, 0.896), rgb(13, 65, 9));
+}
+
+@media only screen and (max-width:1200px){
+   
+    
+    .introduction p{
+        width: 80%;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+@media only screen and (max-width:1000px){
+   
+    
+    .wdboxes{
+        width: 100%;
+        
+    }
+    .wdbox1,.wdbox2 , .wdbox3 {
+        width: 90%;
+        
+    }
+
+}
+@media only screen and (max-width:900px){
+   
+ 
+     
+     .videowrapper iframe {
+        width: 300px;
+        height: 200px;
+    }
+    .image img{
+        max-width: 608px;
+        width: 600px;
+    }
+    .imagecarousel{
+    max-width: 608px;
+    }
+   
+
+}
+@media only screen and (max-width:770px){
+   
+    
+     .videowrapper iframe {
+        width: 200px;
+        height: 200px;
+    }
+    .wdbox1,.wdbox2 , .wdbox3 {
+        width: 90%;
+        height: 400px;
+        
+    }
+    .wdbox1 p,.wdbox2 p, .wdbox3 p{
+        font-size: 100%;
+        
+    }
+    
+}
+@media only screen and (max-width:630px){
+   
+    .animate-charcter{
+        margin: 40vh 0 0 15vh;
+        font-size: 500%;
+        
+     }
+     .videowrapper iframe {
+        width: 200px;
+        height: 200px;
+    }
+    .wdbox1,.wdbox2 , .wdbox3 {
+        width: 90%;
+        height: 500px;
+        
+    }
+    .wdbox1 p,.wdbox2 p, .wdbox3 p{
+        font-size: 100%;
+        
+    }
+    .image img{
+        max-width: 508px;
+        width: 500px;
+    }
+    .imagecarousel{
+    max-width: 508px;
+    }
+    .middleinfo{
+        width: 100%;
+        text-align: center;
+        }
+    
+}
+@media only screen and (max-width:550px){
+   
+    .wdbox3 {
+        flex-direction: column;
+        height: 700px;
+        
+    }
+    
+}
+@media only screen and (max-width:500px){
+    
+     .hero-image{
+        height: 700px;
+        
+     }
+   
+    .wdbox1 ,.wdbox2 {
+        flex-direction: column;
+        height: 1000px;
+        justify-content: space-evenly;
+    }
+    .wdplayer1{
+        width: 80%;
+    }
+    .introduction p{
+        font-size: 160%;
+    }
+    .image img{
+        max-width: 358px;
+        width: 350px;
+    }
+    .imagecarousel{
+    max-width: 358px;
+    }
+    .container
+    {
+        height: 600px;
+    }
+    
+}
+
+
+
+
