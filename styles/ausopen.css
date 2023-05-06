@@ -350,7 +350,7 @@ html{
 }
 .box2 ul li{
     padding: 2vh 0;
-    margin-top: 11vh;
+    margin-top: 8vh;
     border-radius: 20px;
     text-shadow: 2px 2px 4px blue;
     text-align: center;
@@ -396,6 +396,21 @@ html{
     display:none;
 }
 
+#myBtn{
+    background-color: #156cf882;
+    margin: 2vh;
+    padding: 2vh;
+}
+footer {
+    background-color: rgba(57, 175, 175, 0.847);
+   height: 11vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Fugaz One', cursive;
+   font-family: 'Oswald', sans-serif;
+}
+
 @media only screen and (max-width:1300px){
     
     .players{
@@ -405,7 +420,7 @@ html{
         max-width: 1680px;
     }
     .box1 h2 , .box3 h2 , .box2 h2{
-        margin: 5vh 52vh;
+        margin: 5vh 35vh;
         width: 30%;
        
     }
@@ -440,6 +455,7 @@ html{
     }
     .animate-charcter{
         font-size: 450%;
+        margin-top: 30vh;
         
     }
     #mobilemenu{
@@ -488,6 +504,7 @@ html{
 @media only screen and (max-width:480px){
     .animate-charcter{
         font-size: 400%;
+        
         
     }
     .hero-image{

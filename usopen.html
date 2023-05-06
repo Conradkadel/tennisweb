@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/jpeg" href="images/logorg.jpeg">
+    <link rel="shortcut icon" type="image/jpeg" href="images/trophyrg.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/slicknav.css">
+	<link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/ausopen.css">
     <title>Us Open</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/usopen.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function(){
+		$('#navMenu').slicknav({prependTo:"#mobilemenu"});
+		});
+	</script>
 </head>
 <body>
     <body>
@@ -44,12 +54,33 @@
              
             <div class="uscontent">
                 <div class="usbox"> 
-                    <div class="innerbox">SDAS</div>
-                    <div class="innerbox">ASDAS</div>
+                    <div class="innerbox">
+                        <h2>Roger Federer</h2>
+                        <img src="images/federer1.jpeg" alt="">
+                        <p>Roger Federer is a Swiss professional tennis player and has won the US Open five times, in addition to his record 20 Grand Slam singles titles. Federer is known for his graceful playing style, his versatile shot-making ability, and his exceptional sportsmanship. He has been ranked world No. 1 in men's singles tennis by the Association of Tennis Professionals (ATP) a record total of 310 weeks, and is widely regarded as one of the greatest tennis players of all time.</p>
+                    </div>
+                    <div class="innerbox">
+                        <h2>Serena Williams</h2>
+                        <img src="images/serena.jpeg" alt="">
+                        <p>Serena Williams is an American professional tennis player who has won the US Open six times, in addition to her 23 Grand Slam singles titles. Williams is known for her powerful serve, aggressive playing style, and mental toughness. She has been ranked world No. 1 in women's singles tennis by the Women's Tennis Association (WTA) eight times, and has won numerous awards for her achievements both on and off the court, including four Olympic gold medals.</p>
+                    </div>
                 </div>
-                <div class="usbox">
-                    <div class="innerbox">ASDA</div>
-                    <div class="innerbox">ASDAS</div>
+                    <div class="usbox1">
+                       <div class="innerbox1">
+                        <h2>Check Out this Video!</h2>
+                        <iframe src="https://www.youtube.com/embed/zzPFhhF137k" title="The Greatest Wheelchair Tennis Rally in History?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                       </div>
+                       <div class="innerbox1">
+                        <img src="images/usopenlogo.jpg" alt="">
+                        <p>One interesting fact about the US Open is that it was the first Grand Slam tennis tournament to award equal prize money to both men and women. In 1973, the US Open became the first major tennis tournament to offer equal prize money to both male and female players, marking a significant moment for gender equality in sports. This move paved the way for other Grand Slam tournaments to follow suit and provide equal pay for both men and women</p>
+                       </div>
+        
+                       <div class="innerbox1"> 
+                        <h2>...Or This One</h2>
+                        <iframe  src="https://www.youtube.com/embed/Bc588DD6xmI" title="The Best Plays of US Open 2019" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                     
+                    
                 </div>
             </div>
     
@@ -57,14 +88,14 @@
     
             <div class="container">
                 <div class="ausphotos">
-                    Check out these Photos of the Australien Open
+                    Check out these Photos of the Us Open
                 </div>
                 <div class="imagecarousel">
-                    <div class="image fadeout"><img src="images/aus1.png" alt=""></div>
-                    <div class="image fadeout "><img src="images/aus2.jpg" alt=""></div>
-                    <div class="image fadeout"><img src="images/australeinopen1.png" alt=""></div>
-                    <div class="image fadeout"><img src="images/ausbig.jpg" alt=""></div>
-                    <div class="image fadeout"><img src="images/court4.webp" alt=""></div>
+                    <div class="image fadeout"><img src="images/us4.jpg" alt=""></div>
+                    <div class="image fadeout "><img src="images/us5.jpeg" alt=""></div>
+                    <div class="image fadeout"><img src="images/us6.jpeg" alt=""></div>
+                    <div class="image fadeout"><img src="images/us7.png" alt=""></div>
+                    <div class="image fadeout"><img src="images/us8.jpg" alt=""></div>
                     <div class="prev" onclick="showImage(1)"><i class="fa-solid fa-angle-right"></i></div>
                     <div class="next" onclick="showImage(-1)"><i class="fa-solid fa-angle-left"></i></div>
                  </div>
@@ -76,11 +107,13 @@
                     <span class="dot"></span>
                 </div>
             
-                <footer>&copy; Conrad Kadel 2023</footer>
+                <button onclick="topFunction()" id="myBtn" title="Go to top">Go Back Up</button>
             </div>
-        
+            
         </main>
+        <footer>&copy; Conrad Kadel 2023</footer>
     <script src="js/script.js"></script>
+    <script src="js/button.js"></script>
     </body>
 </body>
 </html>

@@ -147,7 +147,7 @@ html{
  .container {
     
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/garros5.webp');
-    padding-top: 25vh;
+    padding-top: 15vh;
     padding-bottom: 0;
     
 }
@@ -186,6 +186,11 @@ html{
 .active { 
     border: 2px solid rgb(255, 208, 0);
     background-color: rgb(255, 3, 3);
+}
+#myBtn{
+    background-color: #f89a1582;
+    margin: 2vh;
+    padding: 2vh;
 }
 
 @media only screen and (max-width:1450px){

@@ -242,7 +242,7 @@
 }
 
 footer p{
-    background-image: url("../images/sand.jpg");;
+    background-color: rgba(57, 175, 175, 0.847);
    height: 11vh;
    display: flex;
    align-items: center;

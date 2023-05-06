@@ -44,7 +44,7 @@
     margin: 0;
     padding: 0;
     margin-top: 35vh;
-    margin-left: 50vh;
+    margin-left: 40vh;
 
    text-transform: uppercase;
   background-image: linear-gradient(
@@ -255,6 +255,11 @@ article {
     font-family: 'Oswald', sans-serif;
     background-image: linear-gradient(180deg,rgba(85, 160, 26, 0.896), rgb(13, 65, 9));
 }
+#myBtn{
+    background-color: #15f82482;
+    margin: 2vh;
+    padding: 2vh;
+}
 
 @media only screen and (max-width:1200px){
    
@@ -263,6 +268,11 @@ article {
         width: 80%;
         margin: 0;
         padding: 0;
+    }
+    .animate-charcter
+    {
+        width: 80%;
+        margin: 35vh 0 0 15vh;
     }
 
 }
@@ -355,6 +365,11 @@ article {
         height: 700px;
         
     }
+    .animate-charcter
+    {
+        width: 80%;
+        margin: 45vh 0 0 5vh;
+    }
     
 }
 @media only screen and (max-width:500px){
@@ -397,6 +412,16 @@ article {
         
      }
     
+}
+@media only screen and (max-width:400px){
+    
+
+    .animate-charcter h1{
+       
+       font-size: 3500%;
+       
+    }
+   
 }
 
 
